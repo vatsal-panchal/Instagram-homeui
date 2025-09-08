@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #262626;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 100;
+  }
+
+  .header .logo {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Brush Script MT", cursive;
+    color: #fff;
+  }
+
+  .header .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header .header-icons i {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* STORIES */
+  .story {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .story::-webkit-scrollbar {
+    display: none;
+  }
+
+  .storys-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .storys {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    position: relative;
+    /* border: 2px solid #ff3040; */
+    padding: 2px;
+  }
+
+  .your-story {
+    /* background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .your-story::after {
+    content: "+";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #0095f6;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 2px solid #000;
+  }
+
+  .storys-container p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
+
+  #story1 {
+    background: url(https://i.pinimg.com/1200x/58/36/4b/58364b97bba4c044562b44d6df4010ae.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+  #story2 {
+    background: url(https://i.pinimg.com/736x/8e/af/ae/8eafae5ceca02c663fa5ffb04d19e540.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+  #story3 {
+    background: url(https://i.pinimg.com/736x/8a/40/d4/8a40d40e3163f9d038de30817cad0999.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+  #story4 {
+    background: url(https://i.pinimg.com/736x/0d/e1/ec/0de1ec074b3d9f0e58d9550772e4c8c2.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+  #story5 {
+    background: url(https://i.pinimg.com/736x/b9/62/41/b96241c56dfce292fd73d6a22f7cb851.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+  #story6 {
+    background: url(https://i.pinimg.com/736x/de/8d/43/de8d43d6f70993bb4deae302bb708a80.jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+
+  /* POST SECTION */
+  .post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .post-profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: url(https://i.pinimg.com/736x/58/36/4b/58364b97bba4c044562b44d6df4010ae.jpg)
+      center/cover no-repeat;
+  }
+  .profile-icons {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .post-name h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .post-name p {
+    font-size: 12px;
+    color: gray;
+    margin: 2px 0 0 0;
+  }
+
+  .icons i {
+    color: #fff;
+  }
+
+  /* POST IMAGE */
+  .post-img {
+    margin: 10px auto;
+    width: 90%;
+    height: 280px;
+    border-radius: 20px;
+    background: url(https://i.pinimg.com/736x/36/86/40/368640f7387cf1b2007c27b19279f1a5.jpg)
+      center/cover no-repeat;
+  }
+
+  #post-img2 {
+    background: url(https://i.pinimg.com/736x/ee/a2/ee/eea2ee097d7fe03834ee7451ebb8735a.jpg)
+      center/cover no-repeat;
+  }
+  #post-img3 {
+    background: url(https://i.pinimg.com/736x/4f/da/9c/4fda9cfa3e7754095005645b7582e7fc.jpg)
+      center/cover no-repeat;
+  }
+  #post-img4 {
+    background: url(https://i.pinimg.com/736x/e5/7a/a3/e57aa3afcffcaadec595646fb90840c9.jpg)
+      center/cover no-repeat;
+  }
+  #post-img5 {
+    background: url(https://i.pinimg.com/736x/b7/72/14/b772149a1ace8b2a3062e4c913960d3a.jpg)
+      center/cover no-repeat;
+  }
+
+  #photo1 {
+    background: url(https://i.pinimg.com/1200x/c8/57/dc/c857dcd89633d3b36adfbfdcda8fac7e.jpg);
+    background-size: cover;
+    object-fit: cover;
+  }
+  #photo2 {
+    background: url(https://i.pinimg.com/736x/3d/7b/29/3d7b2988a88af92b143ca7bfed697ded.jpg);
+    background-size: cover;
+    object-fit: cover;
+  }
+  #photo3 {
+    background: url(https://i.pinimg.com/736x/32/a2/d0/32a2d0eb5ca56f244141e957badc82f9.jpg);
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Responsive for mobile */
+
+  .storys {
+    width: 55px;
+    height: 55px;
+  }
+  .post-profile {
+    width: 45px;
+    height: 45px;
+  }
+  .post-img {
+    height: 300px;
+  }
+  .profile-like {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 5.5vw;
+  }
+  i {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  #caption {
+    margin: 0px 5vw;
+    color: #fff;
+  }
+}
+
+/* Desktop view (min-width 601px) */
+@media (min-width: 600px) {
+  #mobile-content {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+  }
+
+  .desktop-message {
+    text-align: center;
+  }
+}
+
+/* Mobile view (<=600px) */
+@media (max-width: 600px) {
+  .desktop-message {
+    display: none;
+  }
+
+  #mobile-content {
+    display: block;
+  }
+}
